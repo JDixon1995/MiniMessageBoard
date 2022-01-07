@@ -2,7 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
-const PORT = process.env.port
+const PORT = process.env.port || 5000
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
