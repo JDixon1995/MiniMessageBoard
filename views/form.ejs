@@ -1,5 +1,16 @@
-<form method="POST" action="/new">
-    <input type="text">
-    <input type="text">
-    <input type="date">
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+<body>
+    <h1><%= title %></h1>
+    <h2>Add your <%= title %></h2>
+    <form method="POST" action="/new">
+        <input type="text" name="messageText">
+        <input type="text" name="userText">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
